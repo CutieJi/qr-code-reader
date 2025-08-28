@@ -1,0 +1,164 @@
+/* Import Google Font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 10px;
+    background-image: linear-gradient(to top, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%);
+}
+.wrapper {
+    height: 350px;
+    width: 420px;
+    border-radius: 7px;
+    background: #e4e4e4;
+    padding: 30px 30px 35px;
+    transition: height 0.2s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.wrapper h1 {
+    color: #505285;
+    margin-bottom: 20px;
+}
+.wrapper.active {
+    height: 585px;
+}
+.wrapper form {
+    height: 210px;
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    border-radius: 7px;
+    border: 1px solid #585e92;
+    align-items: center;
+    justify-content: center;
+    transition: height 0.2s ease;
+}
+.wrapper.active form {
+    height: 225px;
+    pointer-events: none;
+}
+form img {
+    display: none;
+    max-width: 148px;
+}
+.wrapper.active form img {
+    display: block;
+}
+.wrapper.active form .content {
+    display: none;
+}
+form .content i {
+    color: #65689f;
+    font-size: 55px;
+}
+form .content p {
+    color: #65689f;
+    margin-top: 15px;
+    font-size: 16px;
+}
+.wrapper .details {
+    opacity: 0;
+    margin-top: 25px;
+    pointer-events: none;
+}
+.wrapper.active .details {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.05s ease;
+}
+.details textarea {
+    width: 100%;
+    height: 128px;
+    outline: none;
+    resize: none;
+    font-size: 18px;
+    background: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: 1px solid #585e92;
+}
+textarea::-webkit-scrollbar {
+    width: 0px;
+}
+textarea:hover::-webkit-scrollbar {
+    width: 5px;
+}
+textarea:hover::-webkit-scrollbar-track {
+    background: none;
+}
+textarea:hover::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 8px;
+}
+.details .buttons {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.buttons button {
+    height: 55px;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 5px;
+    background: #585e92;
+    transition: transform 0.3s ease;
+    width: calc(100% / 2 - 10px);
+}
+.buttons button:active {
+    transform: scale(0.95);
+}
+
+#About {
+	position: absolute;
+	right: 3%;
+	top: 3%;
+	background: rgba(255, 255, 255, 0.478);
+	border: none;
+	padding: 10px;
+	border-radius: 50%;
+}
+
+#About img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 20px;
+	height: 20px;
+}
+
+.btnnn {
+  text-align: center;
+	color: white;
+	font-weight: 700;
+	text-shadow: #000000 1px 0 10px;
+}
+
+.btnn {
+  position: absolute;
+  bottom: 20px;
+}
+
+@media (max-width: 450px) {
+    .wrapper {
+        padding: 25px;
+        height: 260px;
+    }
+    .wrapper.active {
+        height: 585px;
+    }
+}
