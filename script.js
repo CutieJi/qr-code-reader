@@ -8,7 +8,8 @@ copyBtn = document.querySelector(".copy");
 function fetchRequest(file, formData) {
 infoText.innerText = "Scanning QR Code...";
 fetch("https://api.qrserver.com/v1/read-qr-code/", {
-    method: "POST", body: formData,
+    method: "POST",
+    body: formData,
 })
     .then(res => res.json())
     .then(result => {
