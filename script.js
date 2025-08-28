@@ -44,6 +44,7 @@ closeBtn.addEventListener("click", () => wrapper.classList.remove("active")
 
 tippy('#About', {
   arrow: true,
-  content: 'Created By Rosh',
+  content: 'Developed By Rosh',
   animation: 'fade',
 });
+
