@@ -156,8 +156,9 @@ textarea:hover::-webkit-scrollbar-thumb {
 @media (max-width: 450px) {
     .wrapper {
         padding: 25px;
-        height: 260px;
+        height: 340px;
     }
+
     .wrapper.active {
         height: 585px;
     }
